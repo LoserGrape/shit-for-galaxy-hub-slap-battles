@@ -5,7 +5,7 @@ local Window = Library.CreateLib("🌌 COnfus1oN HuB ? Slap Battles 🌌", "Grap
 local Tab = Window:NewTab("[Combat]")
 local Section = Tab:NewSection("[ Script Made By Galaxy Scripts ]")
 
-    Section:NewToggle("Slap Aura", "All Glove", function(state)
+    Section:NewToggle("Slap Aura", "Lets You Slap People Far Away", function(state)
     getgenv().slapaura = state
     while getgenv().slapaura do
     for i,v in pairs(game.Players:GetChildren()) do
