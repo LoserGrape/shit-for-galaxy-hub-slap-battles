@@ -23,5 +23,3 @@ local Section = Tab:NewSection("[ Script Made By Galaxy Scripts ]")
     task.wait(0.2)
     end
     end)
-
-Section:UpdateSection("Section New Title")
