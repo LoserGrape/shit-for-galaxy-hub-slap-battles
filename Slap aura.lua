@@ -11,7 +11,7 @@ while wait() do
     if isSpawned(v) and v ~= game.Players.LocalPlayer and not v.Character.Head:FindFirstChild("UnoReverseCard") then
       if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 50 then
         game:GetService("ReplicatedStorage").b:FireServer(v.Character["Right Arm"])
-        wait(0.2)
+        wait(0.4)
       end
     end
   end
