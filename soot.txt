@@ -24,11 +24,6 @@ Section:NewButton("DonjoSX's YT", "Subscribe To Him!", function()
     
 end)
 
+local Section = Tab:NewSection("Made BY WhaleRoblox On Roblox [What?]")
+
 local Tab = Window:NewTab("Admin Buttons")
-
-local Section = Tab:NewSection("Coded by DonjoSX")
-
-Section:NewButton(Die'nt | No Touchy", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Donjosx/SBS/main/die%26touchey_Admin.lua"))()
-    
-end)
