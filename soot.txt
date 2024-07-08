@@ -30,5 +30,4 @@ local Tab = Window:NewTab("Admin Buttons")
 
 Section:NewButton("No Touchey Button | [READ INFO]", "Credit - DonjoSX", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Donjosx/SBS/main/die%26touchey_Admin.lua"))()
-    
 end)
