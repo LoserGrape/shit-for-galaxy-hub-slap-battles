@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Remote Hub | Admin Script - v0.1 | ", "GrapeTheme")
 
-local Tab = Window:NewTab("Credits")
+local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Scripted By Galaxy-Scripts")
 
 Section:NewButton("Copy Scripters YT", "Subscribe!", function()
