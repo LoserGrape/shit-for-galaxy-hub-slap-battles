@@ -27,6 +27,7 @@ end)
 local Section = Tab:NewSection("Made BY WhaleRoblox On Roblox [What?]")
 
 local Tab = Window:NewTab("Admin Buttons")
+local Section = Tab:NewSection("Credit - DonjoSX")
 
 Section:NewButton("No Touchey Button | [READ INFO]", "Credit - DonjoSX", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Donjosx/SBS/main/die%26touchey_Admin.lua"))()
