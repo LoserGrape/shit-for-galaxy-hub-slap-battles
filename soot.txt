@@ -1,25 +1,34 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("🌌 COnfus1oN HuB ? Slap Battles 🌌", "GrapeTheme")
+local Window = Library.CreateLib("Remote Hub | Admin Script - v0.1 | ", "GrapeTheme")
 
-local Tab = Window:NewTab("[Combat]")
-local Section = Tab:NewSection("[ Script Made By Galaxy Scripts ]")
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Scripted By Galaxy-Scripts")
 
-    Section:NewToggle("Slap Aura", "Lets You Slap People Far Away", function(state)
-    getgenv().slapaura = state
-    while getgenv().slapaura do
-    for i,v in pairs(game.Players:GetChildren()) do
-        if v ~= game.Players.LocalPlayer and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and v.Character then
-            if v.Character:FindFirstChild("entered") and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("rock") == nil and v.Character.HumanoidRootPart.BrickColor ~= BrickColor.new("New Yeller") and v.Character.Ragdolled.Value == false then
-                if v.Character.Head:FindFirstChild("UnoReverseCard") == nil or game.Players.LocalPlayer.leaderstats.Glove.Value == "Error" then
-                    Magnitude = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude
-                    if 25 >= Magnitude then
-                        shared.gloveHits[game.Players.LocalPlayer.leaderstats.Glove.Value]:FireServer(v.Character:WaitForChild("HumanoidRootPart"),true)
-                    end
-                end
-            end
-        end
-    end
-    task.wait(0.2)
-    end
-    end)
+Section:NewButton("Copy Scripters YT", "Subscribe!", function()
+    setclipboard("https://www.youtube.com/channel/UCatvHUrz1buvtlWd9G2tqAg")
+    
+end)
+
+local Section = Tab:NewSection("Go Subscribe To Me!")
+
+Section:NewButton("Who Made This? [info]", "Subscribe!", function()
+    setclipboard("https://www.youtube.com/channel/UCatvHUrz1buvtlWd9G2tqAg")
+    
+end)
+
+local Section = Tab:NewSection("3% Code By DonjoSX")
+
+Section:NewButton("DonjoSX's YT", "Subscribe To Him!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LoserGrape/shit-for-galaxy-hub-slap-battles/main/Slap%20aura.lua"))()
+    
+end)
+
+local Tab = Window:NewTab("Admin Buttons")
+
+local Section = Tab:NewSection("Coded by DonjoSX")
+
+Section:NewButton(Die'nt | No Touchy", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Donjosx/SBS/main/die%26touchey_Admin.lua"))()
+    
+end)
