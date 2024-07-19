@@ -46,3 +46,10 @@ Section:NewButton(":Swapper", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("SLOC"):FireServer()
 
 end)
+
+Section:NewButton(":Ghost", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("Ghostinvisibilityactivated"):FireServer()
+
+end)
