@@ -57,6 +57,6 @@ end)
 Section:NewButton(":Thanos", "Uses Ability", function()
     fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
     wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("illbeback"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("Illbeback"):FireServer()
 
 end)
