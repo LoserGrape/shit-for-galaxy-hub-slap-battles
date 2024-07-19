@@ -60,10 +60,3 @@ Section:NewButton(":Thanos", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("Illbeback"):FireServer()
 
 end)
-
-Section:NewButton(":Za Hando", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Za Hando.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Erase"):FireServer()
-
-end)
