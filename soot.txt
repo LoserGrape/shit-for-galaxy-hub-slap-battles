@@ -62,7 +62,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Illbeback"):FireServer()
 end)
 
 Section:NewButton(":Za-Hando", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Za Hando.ClickDetector)
+    fireclickdetector(workspace.Lobby.ZaHando.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("Erase"):FireServer()
 
