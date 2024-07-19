@@ -26,9 +26,16 @@ game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
 
 end)
 
-Section:NewButton(":Sleep", "Uses Ability", function()
+Section:NewButton(":ZZZZ", "Uses Ability", function()
     fireclickdetector(workspace.Lobby.ZZZZZZZ.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("ZZZZZZZSleep"):FireServer()
+
+end)
+
+Section:NewButton(":Flash", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Flash.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("FlashTeleport"):FireServer()
 
 end)
