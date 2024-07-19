@@ -55,8 +55,15 @@ game:GetService("ReplicatedStorage"):WaitForChild("Ghostinvisibilityactivated"):
 end)
 
 Section:NewButton(":Thanos", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
+    fireclickdetector(workspace.Lobby.Thanos.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("Illbeback"):FireServer()
+
+end)
+
+Section:NewButton(":Za Hando", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Za Hando.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("Erase"):FireServer()
 
 end)
