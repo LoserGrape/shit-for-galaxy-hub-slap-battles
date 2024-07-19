@@ -39,3 +39,10 @@ Section:NewButton(":Flash", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("FlashTeleport"):FireServer()
 
 end)
+
+Section:NewButton(":Swapper", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Swapper.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("SLOC"):FireServer()
+
+end)
