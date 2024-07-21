@@ -67,3 +67,10 @@ Section:NewButton(":Fort", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("Fortlol"):FireServer()
 
 end)
+
+Section:NewButton(":Pusher", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Pusher.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("PusherWall"):FireServer()
+
+end)
