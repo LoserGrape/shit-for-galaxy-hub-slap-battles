@@ -103,3 +103,10 @@ Section:NewButton(":Golden", "no cooldown so thats sick", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/tbh/main/eecute%20rn'))()
 
 end)
+
+Section:NewButton(":MR", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.MR.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("Spherify"):FireServer()
+
+end)
