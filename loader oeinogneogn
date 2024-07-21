@@ -159,3 +159,33 @@ Section:NewButton(":Stop", "milk milk milk", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/shuc0wh0fgww/main/stop'))()
 
 end)
+
+Section:NewButton(":Tableflip", "fun fact: my game crashed coding this", function()
+    fireclickdetector(workspace.Lobby.Tableflip.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("GeneralAbility"):FireServer()
+
+end)
+
+Section:NewButton(":Shield", "funny", function()
+    fireclickdetector(workspace.Lobby.Shield.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("GeneralAbility"):FireServer()
+
+end)
+
+Section:NewButton(":Baller", "funny", function()
+    fireclickdetector(workspace.Lobby.Baller.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("GeneralAbility"):FireServer()
+
+end)
+
+Section:NewButton(":Homerun", "funny", function()
+    fireclickdetector(workspace.Lobby.HomeRun.ClickDetector)
+    wait(0.01)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/GYATT/main/start'))()
+  wait(1)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/GYATT/main/finished'))()
+
+end)
