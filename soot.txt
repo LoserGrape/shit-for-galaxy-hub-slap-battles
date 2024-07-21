@@ -133,7 +133,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("DuelistAbility"):FireServer()
 end)
 
 Section:NewButton(":Woah", "Woah!", function()
-    fireclickdetector(workspace.Lobby.Woah.ClickDetector)
+    fireclickdetector(workspace.Lobby.woah.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("VineThud"):FireServer()
 
