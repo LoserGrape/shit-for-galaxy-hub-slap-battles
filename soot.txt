@@ -96,3 +96,10 @@ Section:NewButton(":Mail", "nyeh heh heh you found a easter egg", function()
 game:GetService("ReplicatedStorage"):WaitForChild("MailSend"):FireServer()
 
 end)
+
+Section:NewButton(":Golden", "no cooldown so thats sick", function()
+    fireclickdetector(workspace.Lobby.Golden.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("Goldify"):FireServer()
+
+end)
