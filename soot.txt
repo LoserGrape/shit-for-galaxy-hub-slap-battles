@@ -81,3 +81,13 @@ Section:NewButton(":Space [READ INFO}", "SOUND ONLY", function()
 game:GetService("ReplicatedStorage"):WaitForChild("ZeroGSound"):FireServer()
 
 end)
+
+Section:NewToggle("SpeedRun Speed Effect", "Sets your speed to the speedrun glove", function(state)
+    if state then
+        local player = game.PLayers.LocalPLayer
+        player.Character.Humanoid.WalkSpeed = 42
+    else
+                local player = game.PLayers.LocalPLayer
+        player.Character.Humanoid.WalkSpeed = 15
+    end
+end)
