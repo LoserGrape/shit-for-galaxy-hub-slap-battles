@@ -82,12 +82,10 @@ game:GetService("ReplicatedStorage"):WaitForChild("ZeroGSound"):FireServer()
 
 end)
 
-Section:NewToggle("SpeedRun Speed Effect", "Sets your speed to the speedrun glove", function(state)
+Section:NewToggle("Speedrun Speed", "copys speedruns glove speed", function(state)
     if state then
-        local player = game.PLayers.LocalPLayer
-        player.Character.Humanoid.WalkSpeed = 42
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/speed-hacks-or-sum-shit/main/speedrun'))()
     else
-        local player = game.PLayers.LocalPLayer
-        player.Character.Humanoid.WalkSpeed = 15
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/speed-hacks-or-sum-shit/main/twiddlefinger'))()
     end
 end)
