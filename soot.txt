@@ -9,7 +9,7 @@ local Section = Tab:NewSection("This Script Is A Tribute To Aquoupi")
 local Section = Tab:NewSection("Free Abilitys / [1]")
 
 Section:NewButton(":Null", "Uses Nulls Ability", function()
-    game:GetService("ReplicatedStorage").NullAbility:FireServer()
+    game:GetService("ReplicatedStorage").NullAbility:FireServer() 
 end)
 
 Section:NewButton(":Rhythm", "Uses Rhythms Explosion", function()
