@@ -64,6 +64,6 @@ end)
 Section:NewButton(":Fort", "Uses Ability", function()
     fireclickdetector(workspace.Lobby.Fort.ClickDetector)
     wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("fortlol"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("Fortlol"):FireServer()
 
 end)
