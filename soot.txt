@@ -124,3 +124,10 @@ Section:NewButton(":Reverse", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("ReverseAbility"):FireServer()
 
 end)
+
+Section:NewButton(":Duelist", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Duelist.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("DuelistAbility"):FireServer()
+
+end)
