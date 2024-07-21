@@ -132,7 +132,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("DuelistAbility"):FireServer()
 
 end)
 
-Section:NewButton(":Woah [PATCHED]", "Woah!", function()
+Section:NewButton(":Woah", "Woah!", function()
     fireclickdetector(workspace.Lobby.woah.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("VineThud"):FireServer()
@@ -143,5 +143,12 @@ Section:NewButton(":Engineer", "skibidi", function()
     fireclickdetector(workspace.Lobby.Engineer.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("Sentry"):FireServer()
+
+end)
+
+Section:NewButton(":Rocky", "milk milk milk", function()
+    fireclickdetector(workspace.Lobby.Rocky.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
 
 end)
