@@ -132,9 +132,16 @@ game:GetService("ReplicatedStorage"):WaitForChild("DuelistAbility"):FireServer()
 
 end)
 
-Section:NewButton(":Woah", "Woah!", function()
+Section:NewButton(":Woah [PATCHED]", "Woah!", function()
     fireclickdetector(workspace.Lobby.woah.ClickDetector)
     wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("VineThud"):FireServer()
+
+end)
+
+Section:NewButton(":Engineer", "skibidi", function()
+    fireclickdetector(workspace.Lobby.Engineer.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("Sentry"):FireServer()
 
 end)
