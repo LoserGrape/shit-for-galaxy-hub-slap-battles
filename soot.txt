@@ -74,3 +74,10 @@ Section:NewButton(":Pusher", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("PusherWall"):FireServer()
 
 end)
+
+Section:NewButton(":Space [READ INFO}", "SOUND ONLY", function()
+    fireclickdetector(workspace.Lobby.Space.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("ZeroGSound"):FireServer()
+
+end)
