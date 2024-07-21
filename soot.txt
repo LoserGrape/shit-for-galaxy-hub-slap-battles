@@ -87,7 +87,7 @@ Section:NewToggle("SpeedRun Speed Effect", "Sets your speed to the speedrun glov
         local player = game.PLayers.LocalPLayer
         player.Character.Humanoid.WalkSpeed = 42
     else
-                local player = game.PLayers.LocalPLayer
+        local player = game.PLayers.LocalPLayer
         player.Character.Humanoid.WalkSpeed = 15
     end
 end)
