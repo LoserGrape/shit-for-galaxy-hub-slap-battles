@@ -153,4 +153,4 @@ game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
 
 end)
 
-local Section = Tab:NewSection("Section Name")
+Section:NewLabel("LabelText")
