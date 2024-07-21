@@ -110,3 +110,10 @@ Section:NewButton(":MR", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("Spherify"):FireServer()
 
 end)
+
+Section:NewButton(":Replica", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Replica.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("Duplicate"):FireServer()
+
+end)
