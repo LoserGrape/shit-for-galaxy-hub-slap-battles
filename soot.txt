@@ -117,3 +117,10 @@ Section:NewButton(":Replica", "Uses Ability", function()
 game:GetService("ReplicatedStorage"):WaitForChild("Duplicate"):FireServer()
 
 end)
+
+Section:NewButton(":Reverse", "Uses Ability", function()
+    fireclickdetector(workspace.Lobby.Reverse.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("ReverseAbility"):FireServer()
+
+end)
