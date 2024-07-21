@@ -153,13 +153,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
 
 end)
 
-Section:NewButton(":el-gato", "meow", function()
-    fireclickdetector(workspace.Lobby.el gato.ClickDetector)
-    wait(0.01)
-
-
-end)
-
 Section:NewButton(":Stop", "milk milk milk", function()
     fireclickdetector(workspace.Lobby.STOP.ClickDetector)
     wait(0.01)
