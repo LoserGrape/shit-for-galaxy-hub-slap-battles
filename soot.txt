@@ -89,3 +89,10 @@ Section:NewToggle("Speedrun Speed", "copys speedruns glove speed", function(stat
         loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/speed-hacks-or-sum-shit/main/twiddlefinger'))()
     end
 end)
+
+Section:NewButton(":Mail", "nyeh heh heh you found a easter egg", function()
+    fireclickdetector(workspace.Lobby.Mail.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("MailSend"):FireServer()
+
+end)
