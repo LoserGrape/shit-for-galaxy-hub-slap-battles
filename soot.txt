@@ -154,3 +154,10 @@ game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
 end)
 
 Section:NewLabel("LabelText")
+
+Section:NewButton(":Rocky", "milk milk milk", function()
+    fireclickdetector(workspace.Lobby.Rocky.ClickDetector)
+    wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
+
+end)
