@@ -38,3 +38,13 @@ game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
       
   	end    
 })
+
+Tab:AddButton({
+	Name = "ZZZZZZZ",
+	Callback = function()
+      		fireclickdetector(workspace.Lobby.ZZZZZZZ.ClickDetector)
+            wait(0.01)
+game:GetService("ReplicatedStorage"):WaitForChild("ZZZZZZZSleep"):FireServer()
+
+  	end    
+})
