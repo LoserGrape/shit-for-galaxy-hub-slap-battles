@@ -20,33 +20,3 @@ Section:NewButton("Blasphemy's Piano", "", function()
     game:GetService("ReplicatedStorage").Piano:FireServer()
     
 end)
-
-    Section:NewDropdown("Choose Ability", "All Glove", {"Ban Hammer", "Bomb", "Rocket Launcher"}, function(currentOption)
-        spamretroab = currentOption
-    end)
-
-    Section:NewToggle("Spam Retro", "All Glove", function(state)
-        getgenv().spamretro = state
-        while getgenv().spamretro do
-            if spamretroab == "Ban Hammer" then
-                local args = {
-                    [1] = "Ban Hammer"
-                }
-
-                game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer(unpack(args))
-            elseif spamretroab == "Bomb" then
-                local args = {
-                    [1] = "Bomb"
-                }
-
-                game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer(unpack(args))
-            elseif spamretroab == "Rocket Launcher" then
-                local args = {
-                    [1] = "Rocket Launcher"
-                }
-
-                game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer(unpack(args))
-            end
-        task.wait(0.2)
-        end
-    end)
