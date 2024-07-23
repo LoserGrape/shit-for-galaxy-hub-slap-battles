@@ -23,7 +23,7 @@ end)
 
 Section:NewToggle("SpeedRun WalkSpeed", " ", function(state)
     if state then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
     end
@@ -41,4 +41,12 @@ Section:NewButton("ZZZZZZZ", " ", function()
     fireclickdetector(workspace.Lobby.ZZZZZZZ.ClickDetector)
     wait(0.01)
   game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+end)
+
+Section:NewButton("Flash", " ", function()
+    fireclickdetector(workspace.Lobby.Flash.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").FlashTeleport:FireServer()
+  wait(0.01)
+button:UpdateButton("New Text")
 end)
