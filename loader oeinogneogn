@@ -20,3 +20,11 @@ Section:NewButton("Blasphemy's Piano", "", function()
     game:GetService("ReplicatedStorage").Piano:FireServer()
     
 end)
+
+Section:NewToggle("SpeedRun WalkSpeed", " ", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
+    end
+end)
