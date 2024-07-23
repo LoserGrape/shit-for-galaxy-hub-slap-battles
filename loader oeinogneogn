@@ -1,191 +1,40 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = Library.CreateLib("Whale Hub | Slap Battles [ADMIN]", "Serpent")
+local Window = OrionLib:MakeWindow({Name = "Whale Scripts | Slap Battles", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local Tab = Window:NewTab("[ ! COMMANDS ! ] ")
+local Tab = Window:MakeTab({
+	Name = " [ Commands ] ",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-local Section = Tab:NewSection("This Script Is A Tribute To Aquoupi")
+Tab:AddLabel(" [ This Script Was Coded By @WhaleRoblox On YT ]")
+Tab:AddLabel(" [ Free Abilitys You Can Use Without Any Slaps ]")
 
-local Section = Tab:NewSection("Free Abilitys / [1]")
+Tab:AddButton({
+	Name = "Rhythm Explosion",
+	Callback = function()
+      		game:GetService("ReplicatedStorage").rhythmevent:FireServer("AoeExplosion",0)
+            
+  	end    
+})
 
-Section:NewButton(":Null", "Uses Nulls Ability", function()
-    game:GetService("ReplicatedStorage").NullAbility:FireServer() 
-end)
+Tab:AddButton({
+	Name = "Null Ability",
+	Callback = function()
+      		game:GetService("ReplicatedStorage").NullAbility:FireServer() 
+            
+  	end    
+})
 
-Section:NewButton(":Rhythm", "Uses Rhythms Explosion", function()
-    game:GetService("ReplicatedStorage").rhythmevent:FireServer("AoeExplosion",0)
-    
-end)
+Tab:AddLabel(" [ Slap Require Gloves ]")
 
-local Section = Tab:NewSection("Slap Require Commands / [2] ")
-
-Section:NewButton(":Diamond", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Diamond.ClickDetector)
-    wait(0.01)
+Tab:AddButton({
+	Name = "Diamond",
+	Callback = function()
+      		fireclickdetector(workspace.Lobby.Diamond.ClickDetector)
+            wait(0.01)
 game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
-
-end)
-
-Section:NewButton(":ZZZZ", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.ZZZZZZZ.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("ZZZZZZZSleep"):FireServer()
-
-end)
-
-Section:NewButton(":Flash", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Flash.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("FlashTeleport"):FireServer()
-
-end)
-
-Section:NewButton(":Swapper", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Swapper.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("SLOC"):FireServer()
-
-end)
-
-Section:NewButton(":Ghost", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Ghostinvisibilityactivated"):FireServer()
-
-end)
-
-Section:NewButton(":Thanos", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Thanos.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Illbeback"):FireServer()
-
-end)
-
-Section:NewButton(":Fort", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Fort.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Fortlol"):FireServer()
-
-end)
-
-Section:NewButton(":Pusher", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Pusher.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("PusherWall"):FireServer()
-
-end)
-
-Section:NewButton(":Space [READ INFO}", "SOUND ONLY", function()
-    fireclickdetector(workspace.Lobby.Space.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("ZeroGSound"):FireServer()
-
-end)
-
-Section:NewToggle("Speedrun Speed", "copys speedruns glove speed", function(state)
-    if state then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/speed-hacks-or-sum-shit/main/speedrun'))()
-    else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/speed-hacks-or-sum-shit/main/twiddlefinger'))()
-    end
-end)
-
-Section:NewButton(":Mail", "nyeh heh heh you found a easter egg", function()
-    fireclickdetector(workspace.Lobby.Mail.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("MailSend"):FireServer()
-
-end)
-
-Section:NewButton(":Golden", "no cooldown so thats sick", function()
-    fireclickdetector(workspace.Lobby.Golden.ClickDetector)
-    wait(0.01)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/tbh/main/eecute%20rn'))()
-
-end)
-
-Section:NewButton(":MR", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.MR.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Spherify"):FireServer()
-
-end)
-
-Section:NewButton(":Replica", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Replica.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Duplicate"):FireServer()
-
-end)
-
-Section:NewButton(":Reverse", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Reverse.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("ReverseAbility"):FireServer()
-
-end)
-
-Section:NewButton(":Duelist", "Uses Ability", function()
-    fireclickdetector(workspace.Lobby.Duelist.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("DuelistAbility"):FireServer()
-
-end)
-
-Section:NewButton(":Woah", "Woah!", function()
-    fireclickdetector(workspace.Lobby.woah.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("VineThud"):FireServer()
-
-end)
-
-Section:NewButton(":Engineer", "skibidi", function()
-    fireclickdetector(workspace.Lobby.Engineer.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Sentry"):FireServer()
-
-end)
-
-Section:NewButton(":Rocky", "milk milk milk", function()
-    fireclickdetector(workspace.Lobby.Rocky.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("RockyShoot"):FireServer()
-
-end)
-
-Section:NewButton(":Stop", "milk milk milk", function()
-    fireclickdetector(workspace.Lobby.STOP.ClickDetector)
-    wait(0.01)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/shuc0wh0fgww/main/stop'))()
-
-end)
-
-Section:NewButton(":Tableflip", "fun fact: my game crashed coding this", function()
-    fireclickdetector(workspace.Lobby.Tableflip.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("GeneralAbility"):FireServer()
-
-end)
-
-Section:NewButton(":Shield", "funny", function()
-    fireclickdetector(workspace.Lobby.Shield.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("GeneralAbility"):FireServer()
-
-end)
-
-Section:NewButton(":Baller", "funny", function()
-    fireclickdetector(workspace.Lobby.Baller.ClickDetector)
-    wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("GeneralAbility"):FireServer()
-
-end)
-
-Section:NewButton(":Homerun", "funny", function()
-    fireclickdetector(workspace.Lobby.HomeRun.ClickDetector)
-    wait(0.01)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/GYATT/main/start'))()
-  wait(1)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/LoserGrape/GYATT/main/finished'))()
-
-end)
+      
+  	end    
+})
