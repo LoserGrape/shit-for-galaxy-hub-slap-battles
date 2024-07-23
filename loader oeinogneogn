@@ -1,50 +1,52 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = OrionLib:MakeWindow({Name = "Whale Scripts | Slap Battles", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = Library.CreateLib("Slap Battles | WhaleRoblox's Admin-Panel", "Ocean")
+local Tab = Window:NewTab("[ Commands]")
 
-local Tab = Window:MakeTab({
-	Name = " [ Commands ] ",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Section = Tab:NewSection("Scripted By @WhaleRoblox On YouTube")
+local Section = Tab:NewSection("Free Abilitys You Can Use With Zero Slaps")
 
-Tab:AddLabel(" [ This Script Was Coded By @WhaleRoblox On YT ]")
-Tab:AddLabel(" [ Free Abilitys You Can Use Without Any Slaps ]")
+Section:NewButton("Rhythm Explosion", "", function()
+    game:GetService("ReplicatedStorage").rhythmevent:FireServer("AoeExplosion",0)
+    
+end)
 
-Tab:AddButton({
-	Name = "Rhythm Explosion",
-	Callback = function()
-      		game:GetService("ReplicatedStorage").rhythmevent:FireServer("AoeExplosion",0)
-            
-  	end    
-})
+Section:NewButton("Null Ability", "", function()
+    game:GetService("ReplicatedStorage").NullAbility:FireServer()
+    
+end)
 
-Tab:AddButton({
-	Name = "Null Ability",
-	Callback = function()
-      		game:GetService("ReplicatedStorage").NullAbility:FireServer() 
-            
-  	end    
-})
+Section:NewButton("Blasphemy's Piano", "", function()
+    game:GetService("ReplicatedStorage").Piano:FireServer()
+    
+end)
 
-Tab:AddLabel(" [ Slap Require Gloves ]")
+    Section:NewDropdown("Choose Ability", "All Glove", {"Ban Hammer", "Bomb", "Rocket Launcher"}, function(currentOption)
+        spamretroab = currentOption
+    end)
 
-Tab:AddButton({
-	Name = "Diamond",
-	Callback = function()
-      		fireclickdetector(workspace.Lobby.Diamond.ClickDetector)
-            wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
-      
-  	end    
-})
+    Section:NewToggle("Spam Retro", "All Glove", function(state)
+        getgenv().spamretro = state
+        while getgenv().spamretro do
+            if spamretroab == "Ban Hammer" then
+                local args = {
+                    [1] = "Ban Hammer"
+                }
 
-Tab:AddButton({
-	Name = "ZZZZZZZ",
-	Callback = function()
-      		fireclickdetector(workspace.Lobby.ZZZZZZZ.ClickDetector)
-            wait(0.01)
-game:GetService("ReplicatedStorage"):WaitForChild("ZZZZZZZSleep"):FireServer()
+                game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer(unpack(args))
+            elseif spamretroab == "Bomb" then
+                local args = {
+                    [1] = "Bomb"
+                }
 
-  	end    
-})
+                game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer(unpack(args))
+            elseif spamretroab == "Rocket Launcher" then
+                local args = {
+                    [1] = "Rocket Launcher"
+                }
+
+                game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer(unpack(args))
+            end
+        task.wait(0.2)
+        end
+    end)
