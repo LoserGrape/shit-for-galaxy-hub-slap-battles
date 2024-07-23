@@ -23,8 +23,16 @@ end)
 
 Section:NewToggle("SpeedRun WalkSpeed", " ", function(state)
     if state then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
     end
+end)
+
+local Section = Tab:NewSection("Slap Require Gloves ")
+
+Section:NewButton("Diamond", " ", function()
+    fireclickdetector(workspace.Lobby.Diamond.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Rockmode:FireServer()
 end)
