@@ -1,0 +1,3 @@
+ game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.summonPortal, game.Players.LocalPlayer.Character.Humanoid):Play()
+wait(0.01)
+game:GetService("ReplicatedStorage").RetroAbility:FireServer("Bomb")
