@@ -24,7 +24,7 @@ if nearestPlayer then
         [1] = nearestPlayer.Character.HumanoidRootPart
     }
     
-    game:GetService("ReplicatedStorage").SnowHit:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").BullHit:FireServer(unpack(args))
 else
     print("No nearby players found.")
 end
